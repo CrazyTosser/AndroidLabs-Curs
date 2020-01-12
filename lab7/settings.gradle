@@ -1,0 +1,2 @@
+include ':task1', ':task2'
+rootProject.name='lab7'

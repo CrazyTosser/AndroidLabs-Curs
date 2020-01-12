@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab-t2</string>
+    <string name="about">About</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+    <string name="to_first">To 1</string>
+    <string name="to_third">To 3</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="to_second">To 2</string>
+</resources>

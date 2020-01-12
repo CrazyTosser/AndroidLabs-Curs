@@ -1,0 +1,2 @@
+include ':thread', ':async', ':korut', ':task2', ':task3', ':task4'
+rootProject.name='lab6'

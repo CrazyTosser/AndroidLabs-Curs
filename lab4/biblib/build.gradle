@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jbibtex:jbibtex:1.0.17"
+    testImplementation "junit:junit:4.12"
+}
+
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task finalize {
+    doLast {
+        println('finally!')
+    }
+}
+
+build.finalizedBy(finalize)

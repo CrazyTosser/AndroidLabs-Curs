@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_fst">
+
+    <fragment
+        android:id="@+id/nav_fst"
+        android:name="com.zhmyr.lab_5.ui.fst.FstFragment"
+        android:label="@string/fst"
+        tools:layout="@layout/fragment_fst" >
+        <action
+            android:id="@+id/action_nav_fst_to_scd"
+            app:destination="@id/nav_scd"
+            app:popUpTo="@+id/nav_scd"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_scd"
+        android:name="com.zhmyr.lab_5.ui.scd.ScdFragment"
+        android:label="@string/scd"
+        tools:layout="@layout/fragment_fst" >
+        <action
+            android:id="@+id/action_nav_scd_to_thd"
+            app:destination="@id/nav_thd"
+            app:popUpTo="@+id/nav_thd"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_scd_to_fst"
+            app:destination="@id/nav_fst"
+            app:popUpTo="@+id/nav_fst"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_thd"
+        android:name="com.zhmyr.lab_5.ui.thd.ThdFragment"
+        android:label="@string/thd"
+        tools:layout="@layout/fragment_thd" >
+        <action
+            android:id="@+id/action_nav_thd_to_fst"
+            app:destination="@id/nav_fst"
+            app:popUpTo="@+id/nav_fst"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_thd_to_scd"
+            app:destination="@id/nav_scd"
+            app:popUpTo="@+id/nav_scd"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
