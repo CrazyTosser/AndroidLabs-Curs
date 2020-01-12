@@ -1,0 +1,4 @@
+[submodule "FictionBookReader/parser"]
+	url = https://github.com/CrazyTosser/FictionReaderParser.git
+[submodule "FictionBookReader/app"]
+	url = https://github.com/CrazyTosser/FictionReader.git
